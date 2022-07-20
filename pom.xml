@@ -13,6 +13,7 @@
         <module>tt-shop-bean</module>
         <module>tt-shop-service</module>
         <module>tt-shop-demo</module>
+        <module>tt-shop-sys</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
