@@ -12,7 +12,6 @@
         <module>tt-shop-common</module>
         <module>tt-shop-bean</module>
         <module>tt-shop-service</module>
-        <module>tt-shop-demo</module>
         <module>tt-shop-sys</module>
     </modules>
     <parent>
@@ -26,6 +25,7 @@
         <java.version>1.8</java.version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <tt.shop.version>0.0.1-SNAPSHOT</tt.shop.version>
+        <hutool.version>5.7.15</hutool.version>
     </properties>
 
     <dependencyManagement>
@@ -34,6 +34,11 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
