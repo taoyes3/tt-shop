@@ -13,4 +13,10 @@
     <select id="listChildrenMenuByParentId" resultType="com.taoyes3.shop.sys.model.SysMenu">
         select menu_id,name from sys_menu where parent_id = #{parentId}
     </select>
+    <select id="listSimpleMenuNoButton" resultType="com.taoyes3.shop.sys.model.SysMenu">
+        select menu_id,parent_id,name from sys_menu where type != 2 order by order_num
+    </select>
+    <select id="listMenuIdByRoleId" resultType="Long">
+        select menu_id from sys_role_menu where role_id = #{roleId}
+    </select>
 </mapper>

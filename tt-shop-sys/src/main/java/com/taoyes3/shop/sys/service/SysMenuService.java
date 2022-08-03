@@ -12,4 +12,8 @@ public interface SysMenuService extends IService<SysMenu> {
     List<SysMenu> listRootMenu();
 
     List<SysMenu> listChildrenMenuByParentId(Long parentId);
+
+    List<SysMenu> listSimpleMenuNoButton();
+
+    List<Long> listMenuIdByRoleId(Long roleId);
 }
